@@ -6,7 +6,7 @@ body {
 
 header {
     background: #333;
-    color: blue;
+    color: yellow;
 }
 
 nav ul {
@@ -19,7 +19,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: red;
     text-decoration: none;
 }
 footer {
