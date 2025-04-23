@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Контакты</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="blog.html">Записи блога</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Контакты</h1>
+        <form id="contact-form" onsubmit="sendMessage(event)">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="message">Сообщение:</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+        <p id="response-message" style="display:none;"></p>
+    </main>
+
+    <footer>
+        <p>© 2023, Мой блог</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
